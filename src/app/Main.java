@@ -14,8 +14,8 @@ public class Main {
         System.out.println("Simple Converter");
         System.out.println("Converter from miles to kilometers");
         System.out.print("In km : " + doConvertKilometers());
-        System.out.println("Converter from kilometers to miles v2.0");
-        System.out.print( "In miles : " + doConvertMiles());
+        System.out.println("\nConverter from kilometers to miles v2.0");
+        System.out.print("In miles : " + doConvertMiles());
 
     }
 
@@ -24,11 +24,17 @@ public class Main {
         System.out.print("Enter miles :");
         miles = scanner.nextDouble();
         convertValue = miles * CONST;
+        return roundValue(convertValue);
+    }
+
+    private static String doConvertMiles() {
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter kilometers :");
         kilometers = scanner.nextDouble();
         convertValue = kilometers / CONST;
         return roundValue(convertValue);
     }
+
     public static String roundValue(double value) {
         return new DecimalFormat("#.000").format(value);
     }
