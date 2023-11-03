@@ -11,11 +11,11 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Converter from miles to kilometers");
-        System.out.print("In kilometers : " + doConvertMiles());
+        System.out.print("In kilometers : " + doConvertKilometers());
 
     }
 
-    private static String doConvertMiles() {
+    private static String doConvertKilometers() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter miles :");
         kms = scanner.nextDouble();
