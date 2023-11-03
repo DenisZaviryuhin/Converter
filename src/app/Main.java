@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Converter from miles to kilometers");
-        System.out.print("In kilometers : " + doConvertKilometers());
+        System.out.print("In km : " + doConvertKilometers());
 
     }
 
