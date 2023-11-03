@@ -10,6 +10,7 @@ public class Main {
     static final double CONST = 1.609;
 
     public static void main(String[] args) {
+        System.out.println("Simple Converter");
         System.out.println("Converter from miles to kilometers");
         System.out.print("In km : " + doConvertKilometers());
 
