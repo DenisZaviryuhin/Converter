@@ -7,6 +7,7 @@ import java.text.DecimalFormat;
 public class Main {
     static double kms;
     static double convertValue;
+    static final double CONST = 1.609;
 
     public static void main(String[] args) {
         System.out.println("Converter from miles to kilometers");
@@ -18,7 +19,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter miles :");
         kms = scanner.nextDouble();
-        convertValue = kms * 1.609;
+        convertValue = kms * CONST;
         return roundValue(convertValue);
     }
 
