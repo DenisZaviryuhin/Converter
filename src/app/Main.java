@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 
 
 public class Main {
-    static double kms;
+    static double kilometers;
     static double convertValue;
     static final double CONST = 1.609;
 
@@ -16,9 +16,9 @@ public class Main {
     }
     private static String doConvertMiles(){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter Kilometers :");
-        kms = scanner.nextDouble();
-        convertValue = kms / CONST;
+        System.out.print("Enter kilometers :");
+        kilometers = scanner.nextDouble();
+        convertValue = kilometers / CONST;
         return roundValue(convertValue);
     }
     public static String roundValue(double value) {
